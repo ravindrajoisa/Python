@@ -36,6 +36,7 @@ print(result)
 # In[12]:
 
 
+
 print (5 == 5)
 print (4 == 2)
 
