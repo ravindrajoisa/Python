@@ -1,1 +1,1 @@
-
+This 'Basics' folder covers all the python basics.
