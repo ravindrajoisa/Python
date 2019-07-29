@@ -80,6 +80,48 @@ def another_func():
 another_func()
 
 
+# In[10]:
+
+
+#return a value
+
+def return_element(name):
+    return name
+
+print(return_element("Yo"))
+
+
+# In[11]:
+
+
+def return_exclamation(name):
+    return name + "!"
+
+if return_exclamation("Hi") == "Hi!":
+    print("Matching")
+else:
+    print("Not Maching")
+
+
+# In[15]:
+
+
+def max(a,b):
+    if a<b:
+        return b
+    else:
+        return a
+    
+result = max(4,5)
+print(result)
+
+
+# In[ ]:
+
+
+
+
+
 # In[ ]:
 
 
