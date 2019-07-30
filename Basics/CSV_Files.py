@@ -25,6 +25,7 @@ with open("file.csv") as file:   #skip the first row
 # In[33]:
 
 
+
 with open("file.csv") as file:
     for line in file:
         data = line.strip().split(";")
