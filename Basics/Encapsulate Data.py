@@ -23,10 +23,3 @@ book.add("Ravi", "123456")
 book.add("Aniketh", "56789")
 # book.__entries = {}  >> doesnt work as it is made private.
 print(book.get("Ravi"))
-
-
-# In[ ]:
-
-
-
-
