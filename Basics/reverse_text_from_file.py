@@ -1,12 +1,19 @@
 import os
 
-directory = input('Enter directory: ')
-directory = directory.strip('\n')
+os.chdir('C:\\Users\\ravkrish\\Desktop')
 
-os.chdir(directory)
-file_name = input('Filename:')
+file_name = 'filefile.txt'
+fn = open(file_name, 'r')
 
-file_content = 'Howdy Ravi \n Whatsup'
-fn = open(file_name, 'wt')
-fn.write(file_content)
+for line in fn.readlines():
+    line = line.strip('\n')
+    line = line[::-1]
+    print(line)
+    fn.close()
+    fn = open(file_name, 'a')
+    line = line + '\n'
+    fn.write(line)
+    fn.close()
+    fn = open(file_name, 'r')
+
 fn.close()
