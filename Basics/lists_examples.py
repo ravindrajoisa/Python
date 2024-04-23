@@ -1,35 +1,193 @@
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
-print(thislist)
+#!/usr/bin/env python
+# coding: utf-8
 
-print(len(thislist))
+# In[23]:
 
-list2 = [1,3,5,7]
-list3 = [True, False, "abc", 39, False]
-print(list2)
-print(list3)
-print(type(list3))
 
-thislisting = list(("apple", "banana", "cherry"))
-print(thislist)
-print(thislist[1])
+students = ["Ravi", "Chai", "Aniketh"]
+print(students)
 
-thislist[1:3] = ["blackcurrant", "watermelon"]
-print(thislist)
-thislist.insert(2, "papaya")
-print(thislist)
-thislist.append("Ramfal")
-print(thislist)
 
-indianapple = ["Himachal", "Kashmiri"]
-thislist.extend(indianapple)
-print(thislist)
+# In[5]:
 
-thistuple = ("Goosberry", "Blackberry")
-thislist.extend(thistuple)
-#thislist.remove("blackcurrant", "watermelon")
-#thislist.pop(1)
-thislist.pop() #removes last item
-print(thislist)
-thislist.clear()
-print(thislist)
-del thislist
+
+print(students[2])
+
+
+# In[6]:
+
+
+print(students[0] + " & " + students[2] )
+
+
+# In[8]:
+
+
+print(len(students))
+
+
+# In[9]:
+
+
+students.append("Mani")
+print(students)
+
+
+# In[10]:
+
+
+print(len(students))
+
+
+# In[11]:
+
+
+marks = [4,5,6,7,8]
+print(marks)
+
+
+# In[13]:
+
+
+marks.append(2)
+print(marks)
+
+
+# In[14]:
+
+
+print(len(marks))
+
+
+# In[19]:
+
+
+print((marks[0] + marks[1])/ len(marks))
+
+
+# In[22]:
+
+
+p = students.pop()
+print(students)
+print(p)
+
+
+# In[24]:
+
+
+print(students)
+
+
+# In[26]:
+
+
+last_student = students.pop()
+print(last_student)
+print(students)
+
+
+# In[39]:
+
+
+students = students + ["Aniketh"]
+print(students)
+
+
+# In[40]:
+
+
+students.pop()
+print(students)
+
+
+# In[41]:
+
+
+del students[2]
+print(students)
+
+
+# In[46]:
+
+
+students.remove("Ravi")
+print(students)
+
+
+# In[45]:
+
+
+students = students + ["Ravi"]
+print(students)
+
+
+# In[48]:
+
+
+xs = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ys = [x * x for x in xs]
+print (xs)
+print (ys)
+
+
+# In[50]:
+
+
+ab = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+cd = []
+for a in ab: cd.append(a * a)
+print (ab)
+print (cd)
+
+
+# In[52]:
+
+
+print(students)
+lengths = [len(student) for student in students]
+print(lengths)
+
+
+# In[53]:
+
+
+#drawing graphics
+get_ipython().run_line_magic('matplotlib', 'inline')
+import matplotlib.pyplot as plt
+
+xaxis = [x/10 for x in range (0, 100)]
+yaxis = [x*x for x in xaxis]
+
+print(xaxis)
+print(yaxis)
+
+print(len(xaxis))
+print(len(yaxis))
+
+plt.plot(xaxis, yaxis)
+plt.show()
+
+
+# In[54]:
+
+
+print(students)
+
+
+# In[58]:
+
+
+Nlist = [
+    ["Ravi", "Chai", "Aniketh"],
+    ["Krishna", "Latha"]
+]
+print(Nlist)
+print(Nlist[1][1])
+
+
+# In[ ]:
+
+
+
+
