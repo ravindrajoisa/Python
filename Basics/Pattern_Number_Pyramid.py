@@ -12,15 +12,13 @@ Pseudocode:
 4. i-1 No's in the decreasing orders.
 
 """
-
-# N = int(input())
-N = 4
+N = int(input("Enter a number: "))
 i = 1
 while i <= N:
     #spaces
     spaces = 1
     while spaces <= N-i:
-        print("*")
+        print(" ", end="")
         spaces = spaces + 1 
     
     #left side of pyramid, increasing numbers
@@ -39,8 +37,5 @@ while i <= N:
         print(val, end="")
         val = val - 1
         count = count + 1
-
     print()
     i += 1
-
-#CODE WITH DEFECTS - TO BE FIXED
