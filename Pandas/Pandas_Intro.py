@@ -8,3 +8,4 @@ mydataset = {
 myvar = pd.DataFrame(mydataset)
 
 print(myvar)
+print(pd.__version__)
