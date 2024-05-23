@@ -9,3 +9,6 @@ data = {
 df = pd.DataFrame(data)     
 
 print(df)
+
+#refer to the row index
+print(df.loc[1])
