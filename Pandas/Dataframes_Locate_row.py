@@ -12,3 +12,4 @@ print(df)
 
 #refer to the row index
 print(df.loc[1])
+print(df.loc[[1,2]])    #use a list of indexes
