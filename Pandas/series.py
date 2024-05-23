@@ -5,3 +5,4 @@ a = [4, 6, 8, 3]
 myvar = pd.Series(a)
 
 print(myvar)
+print(myvar[0])     #lables
